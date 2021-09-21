@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Christian's Charming Website </title>
+        <style>
+            body {
+                background: rgb(107, 140, 143);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin-bottom: 20px;
+                
+            }
+        
+            /* navigation menu */
+            nav {
+                background: rgb(35, 129, 206);
+                margin: 0 auto;
+                display: flex;
+                padding: 10px;
+                border:rgb(45, 45, 45) ridge;
+                position: -webkit-sticky;
+                position: sticky;
+                top: 5px;
+                
+            }
+            h1 {
+                display: flex;
+                align-items: center;
+                color: white;
+                flex: 1;
+                margin: 0;
+            }
+            #nav-ul {
+                list-style-image: none;
+                
+            }
+            .nav-li {
+                display: inline-block;
+                padding: 0 10px;
+                border: 4px silver ridge;
+                
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        
+            /* main container area beneath menu */
+            main {
+                background: rgb(35, 206, 206);
+                display: flex;
+                padding: 25px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                border-radius: 0% 0% 25px 25px;
+                align-content: center;
+            
+                
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar-img {
+                width: 800px;
+                border-radius: 10% 30%;
+            }
+            .content {
+                flex: 0;
+                padding: 15px;
+                align-content: space-between;
+                margin: 15px;
+                position: absolute;
+                right: 15px;
+
+            }
+            #interests {
+                border: 4px silver ridge;
+                padding: 15px;
+                margin: 15px;
+            }
+            h2, h3 {
+                margin: 0px;
+            }
+        </style>
+    </head>
+    <body> 
+         <!-- All content goes here -->
+        <div is="all-contents">
+            
+            <nav> 
+                <h1> Website of the Gods </h1>
+                <ul is="nav-ul">
+                    
+                    <li class="nav-li">
+                        
+                        <a href="index.html"> Home</a>
+                    </li>
+                    <li class="nav-li">
+                        
+                        <a href="portfolio.html"> Portfolio</a>
+                    </li> 
+                </ul> 
+            </nav>
+            <main>
+                <!-- Sidebar section -->
+                <div class="sidebar">
+                    
+                    <img class="sidebar-img" src="https://conceptartworld.com/wp-content/uploads/2018/02/destiny-2-concept-art-jeremy-fenske-03.jpg" >
+                </div>
+
+                <!-- Content section -->
+                <div class="content">
+                    <h2> Christian Nelson </h2>
+                    <p> Student at Berwick High School</p>
+                    <!-- Interests section -->
+                        <div id="interests"> 
+                            <h3> Interests </h3>
+                            <ul>
+                                <li> Drumming </li>
+                                <li> Gaming </li>
+                                <li> Sleeping </li>
+                            </ul>
+
+                        </div>
+                </div>
+            </main> 
+
+        </div> 
+            
+    </body>
+
+</html>
