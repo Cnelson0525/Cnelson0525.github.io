@@ -90,13 +90,14 @@
                 color: #ffffff;
             }
                         /* portfolio styles */
-                        .content h1 {
+            .content h1 {
                 color: black;
             }
             
             #portfolio {
                 list-style-type: none;
                 padding-left: 0;
+                padding: 15px;
             }
             
             #portfolio li {
@@ -114,7 +115,11 @@
                 text-decoration: none;
                 color: #454545;
             }
-
+            #title {
+                color: rgb(255, 255, 255);
+                padding: 15px;
+                
+            }
 
         </style>
 
@@ -135,7 +140,7 @@
             </nav>
             <main>
                 <div class= "content">
-                    <h1> Portfolio
+                    <h1 id="title"> Portfolio
                         <ul id="portfolio">
                             <li><a href="projects/platformer/">Platformer : A cannon - dodging, collectible - grabbing adventure game for Halleb0t</a></li>
                             <li><a href="projects/bouncing-box/">Bouncing Box : A project that gives you a taste of game development on the web </a></li>
