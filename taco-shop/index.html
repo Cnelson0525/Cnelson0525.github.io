@@ -61,29 +61,51 @@
         <script>
             $('button').on('click', takeOrder);
             function takeOrder(){
-            var total = 0
-            var order = prompt("What combo number will you be ordering today?")
-            if (order ===  "3"){
-                total = total + 14.99
-                alert("Your total is " + total + ", enjoy your tacos and please come back :)");
-            }
-            else if (order ===  "2"){
-                total = total + 9.99
-                alert("Your total is " + total + ", enjoy your tacos and please come back :)");
-            }
-            else if (order === "1"){
-                total = total + 6.99
-                alert("Your total is " + total + ", enjoy your tacos and please come back :)");
-            }
-            else {
-                alert("Please enter a valid order number!");
-            }
-
-           
-
-
+                var total = 0
+                var order = prompt("What combo number will you be ordering today?")
+                var stock = (Math.floor(Math.random() * 10) + 1)
+                console.log(stock)
+                
+                    if (order ===  "3"){
+                        total = total + 14.99
+                        if (stock >= 5){
+                            alert("This item is in stock :) Your total is now " + total + ", enjoy your tacos and please come back :)");
+                            }
+                        else {
+                            alert ("Sorry, this item is currently out of stock :(");
+                        }
+                    }
+                    else if (order ===  "2"){
+                        total = total + 9.99
+                        if (stock >= 5){
+                            alert("This item is in stock :) Your total is now " + total + ", enjoy your tacos and please come back :)");
+                            }
+                        else {
+                            alert ("Sorry, this item is currently out of stock :(");
+                        }
+                    }
+                    else if (order === "1"){
+                        total = total + 6.99
+                        if (stock >= 5){
+                            alert("This item is in stock :) Your total is now " + total + ", enjoy your tacos and please come back :)");
+                            }
+                        else {
+                            alert ("Sorry, this item is currently out of stock :(");
+                        }
+                    }
+                    else {
+                        alert("Please enter a valid order number!");
+                    }       
 
             }
         </script>
     </body>
 </html>
+
+
+<!-- if (stock >= 5){
+    alert("Your total is " + total + ", enjoy your tacos and please come back :)");
+}
+else {
+    alert ("Sorry, this item is currently out of stock :(");
+} -->
